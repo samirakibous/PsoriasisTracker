@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E8E6E6"
+    tools:context=".SuivActivity">
+
+    <!-- Add Toolbar here -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsuivi"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D6D6D6"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/back_btn3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/Todo"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:padding="8dp"
+                android:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Tu as des symptômes?"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section 1 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/round_back_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Les Douleurs"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_grey"
+                    android:padding="15dp">
+                    <TextView
+                        android:id="@+id/tv_symptom_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niveau: 0"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"/>
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progress="1"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp" />
+                <!-- Rectangle de gauche -->
+            </LinearLayout>
+
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="20dp" />
+            <!-- Section 2 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/round_back_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Les Rougeurs"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_grey"
+                    android:padding="15dp">
+                    <TextView
+                        android:id="@+id/tv_symptom_level1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niveau: 0"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"/>
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progress="1"/>
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_submit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="10dp" />
+            <!-- Add more sections as needed in the same pattern -->
+            <!-- Section 3 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/round_back_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La Surface"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_grey"
+                    android:padding="15dp">
+                    <TextView
+                        android:id="@+id/tv_symptom_surface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niveau: 0"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"/>
+                    <SeekBar
+                        android:id="@+id/seekBarSurface"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progress="1"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_surface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp" />
+                <!-- Rectangle de droite -->
+
+            </LinearLayout>
+
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChartSurface"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="20dp" />
+            <!-- Section 4 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/round_back_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Les démangeaisons"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_grey"
+                    android:padding="15dp">
+                    <TextView
+                        android:id="@+id/tv_symptom_itches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niveau: 0"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"/>
+                    <SeekBar
+                        android:id="@+id/seekBarItches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progress="1"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_itches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChartItches"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

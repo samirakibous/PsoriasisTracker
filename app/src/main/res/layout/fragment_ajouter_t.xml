@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreatmentActivity">
+    <LinearLayout
+        style="@style/SCREEN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D6D6D6"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Titre "Nom" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/round_back_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- EditText pour entrer le nom du traitement -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_back_grey"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/editTextTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Entrez le nom du traitement"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Titre "Médicaments" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/round_back_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médicaments"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Bouton pour ajouter un médicament -->
+            <Button
+                android:id="@+id/buttonMedicaments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Ajouter"
+                android:textColor="#10655D"
+                android:backgroundTint="#72A6A1" />
+
+        </LinearLayout>
+
+        <!-- Titre "Rappels" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/round_back_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rappels"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Bouton pour ajouter un rappel -->
+            <Button
+                android:id="@+id/buttonRappelsT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Ajouter"
+                android:textColor="#10655D"
+                android:backgroundTint="#72A6A1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonEnregistrerT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Enregistrer"
+        android:layout_marginTop="120dp"
+        android:textColor="#10655D"
+        android:backgroundTint="#72A6A1"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

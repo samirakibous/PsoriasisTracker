@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Psoriasis Tracker</string>
+    <string name="Email" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="regime">Regime\n</string>
+    <string name="ajouter">ajouter</string>
+    <string name="Traitement">Traitement</string>
+    <string name="Mood">Mood</string>
+    <string name="SuiviCutané">Suivi Cutané</string>
+    <string name="navigation_drawer_open">open Navigation Drawer</string>
+    <string name="navigation_drawer_close">close Navigation Drawer</string>
+    <string name="moi">moi</string>
+    <string name="home">home</string>
+    <string name="community">community</string>
+    <string name="about_us">about us</string>
+    <string name="news">news</string>
+    <string name="settings">settings\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_task_button">Add Task Floating Action Button (FAB)</string>
+    <string name="action_settings">Settings</string>
+    <string name="suivie_cutane">suivie cutané</string>
+    <string name="suivi_cutan">Suivi Cutané</string>
+    <string name="user">user</string>
+    <string name="note_title">note title</string>
+    <string name="this_can_be_note_content_that_can_be_long">this can be note content that can be long</string>
+    <string name="Note_title">Note title</string>
+    <string name="todo">TODO</string>
+    <string name="Todo">TODO</string>
+    <string name="notes">Notes</string>
+    <string name="add_new_note">Add New Note</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="delete_note">Delete note</string>
+    <string name="todo2">TODO</string>
+    <string name="tu_as_des_symptomes">tu as des symptomes?</string>
+    <string name="title_activity_note_details">NoteDetailsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="d_connexion">déconnexion</string>
+    <string name="hint_enter_med_name">entrer le nom de médicament</string>
+    <string name="provide_your_account_s_email_for_which_you_want_to_reset_your_password">Provide your account\'s email for which you want to reset your password!</string>
+    <string name="new_medicine">NEW MEDICINE</string>
+    <string name="title_medicine_name">Medicine Name</string>
+    <string name="medicine_days">Medicine Days</string>
+    <string name="title_treatment_deadline">Treatment deadline</string>
+    <string name="title_continuous_use">Continuous use</string>
+    <string name="title_reminder">Reminder</string>
+    <string name="every_day">Every day</string>
+    <string name="no_medicine_added">No Medicine Added</string>
+    <string name="loading_tasks_error">Error while loading medicineAlarms</string>
+    <string name="successfully_saved_me_message">Medicine Added Successfully</string>
+    <string name="successfully_deleted_message">Medicine deleted Successfully</string>
+    <string name="reminder_message">It\'s Time to take your medicine</string>
+    <string name="ignored">IGNORED</string>
+    <string name="taken">TAKEN</string>
+    <string name="all">ALL</string>
+    <string name="menu_filter">Filter</string>
+    <string name="all_label">All Medicines</string>
+    <string name="ignore_label">Medicines Ignored</string>
+    <string name="taken_label">Medicine Taken</string>
+    <string name="no_history">No History Found</string>
+    <string name="no_taken_med_history">You have not taken any medicine</string>
+    <string name="no_ignored_history">Well Done</string>
+    <string name="menu_stats">Monthly Report</string>
+    <string name="welcome">welcome</string>
+    <string name="view_more">view mor about specific privacy policy</string>
+    <string name="default_notification_channel_id">channel_id</string>
+    <string name="default_notification_channel_name">Notifications</string>
+    <!--new app-->
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+
+    <string name="editor_activity_title_new_reminder">Add Reminder Details</string>
+    <string name="editor_activity_title_edit_reminder">Edit Reminder</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this Reminder?</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_reminder_successful">Reminder deleted</string>
+
+    <string name="editor_delete_reminder_failed">Error with deleting reminder</string>
+
+    <string name="editor_insert_reminder_successful">Reminder saved</string>
+
+    <string name="editor_insert_reminder_failed">Error with saving reminder</string>
+
+    <string name="editor_update_reminder_successful">Reminder updated</string>
+
+    <string name="editor_update_reminder_failed">Error with updating reminder</string>
+
+    <string name="reminder_title">AlarmReminder</string>
+    <string name="title_activity_home">Home</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_info">Info</string>
+    <string name="username">username</string>
+    <string name="add_post">add post</string>
+    <string name="add_a_comment">add a comment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="dbname_photos">photos</string>
+    <string name="dbname_user_photos">user_photos</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
+    <string name="dbname_stories">stories</string>
+
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_display_name">display_name</string>
+    <string name="field_website">website</string>
+    <string name="field_description">description</string>
+    <string name="field_phone_number">phone_number</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_likes">likes</string>
+    <string name="field_caption">caption</string>
+    <string name="field_date_created">date_created</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_tags">tags</string>
+    <string name="field_image_path">image_path</string>
+    <string name="field_comments">comments</string>
+    <string name="field_comment">comment</string>
+    <string name="field_image_uri">image_uri</string>
+    <string name="field_video_uri">video_uri</string>
+    <string name="field_story_id">story_id</string>
+    <string name="field_views">views</string>
+    <string name="field_duration">duration</string>
+    <string name="field_profile_photo">profile_photo</string>
+    <string name="field_timestamp">timestamp</string>
+    <string name="comment_te_sens_tu_aujourd_hui">Comment te sens-tu aujourd\'hui?</string>
+    <string name="admin_username">admin</string>
+
+    <string-array name="post_options">
+        <item>cliquer</item>
+        <item>Supprimer</item>
+    </string-array>
+
+        <string-array name="admin_options">
+            <item>Delete</item>
+        </string-array>
+    <string name="delete_option">Supprimer</string>
+
+</resources>

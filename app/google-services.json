@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "567916447057",
+    "project_id": "samira-cb354",
+    "storage_bucket": "samira-cb354.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567916447057:android:c577ba5b318692f0557f70",
+        "android_client_info": {
+          "package_name": "com.example.samira"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE1103Pc4_syyanUgPkGWpzmMr1g2Ecgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

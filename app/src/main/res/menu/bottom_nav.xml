@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Accueil"
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item
+        android:title="Communauté"
+        android:id="@+id/bottom_info"
+        android:icon="@drawable/baseline_groups_3_24"
+        />
+    <item
+        android:title="Assistant"
+        android:id="@+id/bottom_community"
+        android:icon="@drawable/baseline_forum_24"
+        />
+    <item
+        android:title="Paramètres"
+        android:id="@+id/bottom_set"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        />
+</menu>

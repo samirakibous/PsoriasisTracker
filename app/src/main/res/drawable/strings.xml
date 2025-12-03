@@ -1,0 +1,21 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string android:name="app_name">psoriasis app</string>
+
+    <string android:name="navigation_drawer_open">open Navigation Drawer</string>
+    <string android:name="navigation_drawer_close">close Navigation Drawer</string>
+    <string android:name="moi">moi</string>
+    <string android:name="home">home</string>
+    <string android:name="community">community</string>
+    <string android:name="about_us">about us</string>
+    <string android:name="news">news</string>
+    <string android:name="settings">settings\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string android:name="hello_blank_fragment">Hello blank fragment</string>
+    <string android:name="suivie_cutane">suivie cutané</string>
+    <string android:name="ajouter">ajouter</string>
+    <string android:name="suivi_cutan">Suivi Cutané</string>
+    <string android:name="SuiviCutané">Suivi Cutané</string>
+    <string android:name="Mood">mood\n</string>
+    <string android:name="Traitement">Traitement</string>
+    <string android:name="regime">Régime</string>
+</resources>
