@@ -2,7 +2,7 @@
 
 PsoriasisTracker est une application Android conçue pour aider les utilisateurs à suivre leurs symptômes, leurs traitements, leurs humeurs et leurs tâches liées à la gestion du psoriasis. L'application utilise Firebase pour la gestion des données et propose une interface intuitive pour une meilleure expérience utilisateur.
 
----
+---+
 
 ## Fonctionnalités
 
@@ -91,9 +91,7 @@ Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
 ---
 
-## Remerciements
-- Merci à tous les contributeurs et à la communauté open-source pour leur soutien.
+## Auteurs
+- [Samira Kibous](https://github.com/samirakibous)
 
 ---
-
-N'hésitez pas à mettre à jour ce fichier README au fur et à mesure que le projet évolue.
