@@ -1,156 +1,97 @@
-🩺 PsoriasisTracker
+# PsoriasisTracker
 
-PsoriasisTracker est une application Android dédiée à l’accompagnement des personnes atteintes de psoriasis.
-Elle permet de suivre l’évolution des symptômes, de gérer les traitements, d’organiser les tâches quotidiennes et de bénéficier d’un soutien communautaire, le tout dans une interface simple, moderne et sécurisée.
+PsoriasisTracker est une application Android conçue pour aider les utilisateurs à suivre leurs symptômes, leurs traitements, leurs humeurs et leurs tâches liées à la gestion du psoriasis. L'application utilise Firebase pour la gestion des données et propose une interface intuitive pour une meilleure expérience utilisateur.
 
-L’application s’appuie sur Firebase pour la gestion des données et propose une expérience utilisateur fluide et intuitive.
+---+
 
-✨ Fonctionnalités principales
-📊 Suivi des symptômes
+## Fonctionnalités
 
-Enregistrement quotidien des symptômes :
-stress, humeur, surface affectée, démangeaisons, etc.
+### 1. **Suivi des symptômes**
+- Les utilisateurs peuvent enregistrer et suivre différents symptômes (stress, humeur, surface affectée, démangeaisons, etc.) à l'aide de graphiques interactifs.
+- Les données sont stockées dans Firebase Realtime Database.
 
-Visualisation de l’évolution via des graphiques interactifs.
+### 2. **Gestion des traitements**
+- Ajout de médicaments avec des informations telles que le nom, la description et la dose.
+- Rappel des médicaments grâce à l'intégration d'`AlarmManager`.
 
-Données stockées et synchronisées avec Firebase Realtime Database.
+### 3. **Gestion des tâches**
+- Ajout et suivi des tâches liées à la gestion du psoriasis.
+- Les tâches sont affichées dans une liste avec des options pour les supprimer ou les modifier.
 
-💊 Gestion des traitements
+### 4. **Communauté**
+- Les utilisateurs peuvent interagir avec d'autres membres via une section communautaire.
+- Publication et lecture de posts dans un flux communautaire.
 
-Ajout et gestion des médicaments :
+### 5. **Suivi des notes**
+- Ajout et modification de notes personnelles.
+- Les notes sont synchronisées avec Firebase Firestore.
 
-Nom
+### 6. **Mode sombre**
+- Option pour activer/désactiver le mode sombre dans les paramètres.
 
-Description
+### 7. **Écran de démarrage**
+- Vidéo d'introduction pour une expérience utilisateur engageante.
 
-Dosage
+### 8. **Assistant virtuel Gemini**
+- Un assistant virtuel intégré pour répondre aux questions des utilisateurs et fournir des conseils personnalisés.
 
-Rappels automatiques grâce à l’intégration d’AlarmManager.
+---
 
-📝 Gestion des tâches
+## Structure du projet
 
-Création de tâches liées à la gestion du psoriasis (soins, rendez-vous, habitudes).
+### Répertoires principaux :
+- **`app/src/main/java/com/example/samira`** : Contient les fichiers Java pour les activités, fragments, adaptateurs et modèles.
+- **`app/src/main/res`** : Contient les ressources de l'application (layouts, animations, images, etc.).
+- **`app/src/main/java/com/example/samira/model`** : Contient les classes de modèle pour les données (ex. `Post`, `MedicineLibrary`, `Task`).
+- **`app/src/main/java/com/example/samira/adapter`** : Contient les adaptateurs pour les RecyclerViews (ex. `PostAdapter`, `NoteAdapter`).
 
-Affichage sous forme de liste.
+---
 
-Possibilité de modifier ou supprimer les tâches.
+## Technologies utilisées
 
-👥 Communauté
+- **Langage** : Java
+- **Base de données** : Firebase Realtime Database, Firestore
+- **Notifications** : AlarmManager
+- **Graphiques** : MPAndroidChart
+- **Authentification** : Firebase Authentication
+- **UI/UX** : RecyclerView, Fragments, SeekBars, ProgressDialog
 
-Espace communautaire pour :
+---
 
-Publier des posts
+## Installation
 
-Lire et interagir avec les publications des autres utilisateurs
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/PsoriasisTracker.git
+   ```
+2. Ouvrez le projet dans Android Studio.
+3. Synchronisez les fichiers Gradle.
+4. Compilez et exécutez le projet sur un émulateur ou un appareil physique.
 
-Favorise le partage d’expériences et le soutien moral.
+---
 
-📒 Notes personnelles
+## Contribution
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre ces étapes :
+1. Forkez le dépôt.
+2. Créez une nouvelle branche pour votre fonctionnalité ou correction de bug :
+   ```bash
+   git checkout -b feature/votre-nouvelle-fonctionnalite
+   ```
+3. Validez vos modifications et poussez-les vers votre fork :
+   ```bash
+   git commit -m "Ajoutez votre message de commit ici"
+   git push origin feature/votre-nouvelle-fonctionnalite
+   ```
+4. Ouvrez une demande de tirage vers le dépôt principal.
 
-Création et édition de notes personnelles.
+---
 
-Synchronisation en temps réel avec Firebase Firestore.
+## License
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
-🌙 Mode sombre
+---
 
-Activation / désactivation du Dark Mode depuis les paramètres.
+## Auteurs
+- [Samira Kibous](https://github.com/samirakibous)
 
-Meilleur confort visuel, notamment la nuit.
-
-🎬 Écran de démarrage
-
-Vidéo d’introduction pour une expérience utilisateur immersive dès le lancement de l’application.
-
-🤖 Assistant virtuel Gemini
-
-Assistant intelligent intégré pour :
-
-Répondre aux questions des utilisateurs
-
-Fournir des conseils personnalisés liés au psoriasis
-
-🗂️ Structure du projet
-📁 Répertoires principaux
-app/
- └── src/main/
-     ├── java/com/example/samira/
-     │   ├── model/        → Classes de données (Post, Task, Medicine, etc.)
-     │   ├── adapter/     → Adapters RecyclerView
-     │   ├── activities/  → Activities
-     │   └── fragments/   → Fragments
-     └── res/
-         ├── layout/      → Fichiers XML UI
-         ├── drawable/    → Images & icônes
-         ├── anim/        → Animations
-         └── values/      → Thèmes, couleurs, styles
-
-🛠️ Technologies utilisées
-
-Langage : Java
-
-Plateforme : Android
-
-Base de données :
-
-Firebase Realtime Database
-
-Firebase Firestore
-
-Authentification : Firebase Authentication
-
-Notifications : AlarmManager
-
-Graphiques : MPAndroidChart
-
-UI/UX :
-
-RecyclerView
-
-Fragments
-
-SeekBars
-
-ProgressDialog
-
-🚀 Installation
-
-Clonez le dépôt :
-
-git clone https://github.com/votre-utilisateur/PsoriasisTracker.git
-
-
-Ouvrez le projet dans Android Studio.
-
-Synchronisez les fichiers Gradle.
-
-Configurez Firebase (google-services.json).
-
-Lancez l’application sur un émulateur ou un appareil physique.
-
-🤝 Contribution
-
-Les contributions sont les bienvenues !
-
-Forkez le dépôt
-
-Créez une branche :
-
-git checkout -b feature/ma-nouvelle-fonctionnalite
-
-
-Commitez vos changements :
-
-git commit -m "Ajout d'une nouvelle fonctionnalité"
-
-
-Poussez vers votre fork :
-
-git push origin feature/ma-nouvelle-fonctionnalite
-
-
-Ouvrez une Pull Request 🚀
-
-📄 Licence
-
-Ce projet est sous licence MIT.
-Voir le fichier LICENSE pour plus d’informations.
+---
